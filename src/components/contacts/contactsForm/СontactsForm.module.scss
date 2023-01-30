@@ -78,6 +78,12 @@
         opacity: 1;
         transform: scale(4);
       }
+
+      &:disabled {
+        color: darkred;
+        cursor: wait;
+      }
     }
+
   }
 }

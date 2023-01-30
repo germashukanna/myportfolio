@@ -6,6 +6,7 @@ import {useFormik} from "formik";
 
 export const ContactsForm = () => {
 
+
     const formik = useFormik({
         initialValues: {
             email: '',
@@ -21,6 +22,7 @@ export const ContactsForm = () => {
             }).then(() => {
                 alert('Спасибо за обратную связь')
                 formik.resetForm()
+
             })
                 .finally(() => {
                     alert('Спасибо за обратную связь!')
@@ -45,7 +47,7 @@ export const ContactsForm = () => {
                         <textarea className={s.textarea} placeholder={'Your Message'}
                                   {...formik.getFieldProps('message')}/>
                     </label>
-                    <button className={s.btn} type="submit">SEND MESSAGE</button>
+                    <button className={s.btn} type="submit" disabled={!formik.isValid || formik.isSubmitting}>SEND MESSAGE</button>
                 </form>
             </div>
     )
