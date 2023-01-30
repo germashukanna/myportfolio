@@ -11,8 +11,9 @@
   margin: 0 auto;
   padding: 0 15px;
   @media screen and (max-width: 406px) {
-    min-height: 900px;
+    min-height: 400px;
   }
+
   .list {
     list-style: none;
     @include textPosition(flex, space-around, wrap);
@@ -25,7 +26,14 @@
   .listFooter {
     @include textPosition(flex, space-around, wrap);
 
+    .footerImg {
+      width: 90px;
+      @media screen and (max-width: 406px) {
+        width: 70px;
+      }
+    }
   }
+
   .listFooter:hover {
     transform: scale(1.2, 1.2);
     transition: 0.9s

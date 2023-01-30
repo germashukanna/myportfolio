@@ -13,12 +13,12 @@ export const Footer = () => {
             <Title title={'Hermashuk Hanna'}/>
                 <ul className={s.list}>
                 <li className={s.listFooter}><a href={'https://www.linkedin.com/in/%D0%B0%D0%BD%D0%BD%D0%B0-%D0%B3%D0%B5%D1%80%D0%BC%D0%B0%D1%88%D1%83%D0%BA/'}>
-                    <img src={linkedInImage}/></a></li>
+                    <img src={linkedInImage} className={s.footerImg}/></a></li>
                 <li className={s.listFooter}><a href={'https://github.com/germashukanna'}>
-                    <img src={gitImage}/></a></li>
+                    <img src={gitImage} className={s.footerImg}/></a></li>
                 <li className={s.listFooter}><a href={'https://www.codewars.com/users/AnnaHermashuk'}>
-                    <img src={codewarsImage}/></a></li>
-                <li className={s.listFooter}><a href={'https://t.me/gerannava'}><img src={telegramImage}/></a></li>
+                    <img src={codewarsImage} className={s.footerImg}/></a></li>
+                <li className={s.listFooter}><a href={'https://t.me/gerannava'}><img src={telegramImage} className={s.footerImg}/></a></li>
             </ul>
             <div className={s.footerEhd}><h4>© 2022 All Rights Reserved.</h4></div>
         </div>
