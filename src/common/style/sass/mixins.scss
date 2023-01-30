@@ -1,0 +1,15 @@
+@import './variable';
+
+@mixin text($fontWeight, $fontSize) {
+  font-family: $mainFontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  color: $mainTextColor;
+}
+
+@mixin textPosition($display, $justifyContent, $flexWrap) {
+  display: $display;
+  justify-content: $justifyContent;
+  flex-wrap: $flexWrap;
+  background-color: $mainbackgroundColor;
+}
