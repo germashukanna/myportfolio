@@ -31,7 +31,7 @@ export const Skills = () => {
                 <div className={s.skills}>
                     <Skill style={cssImage} title={"Development"} name={"React, Redux, JavaScript, TypeScript, AXIOS etc"}/>
                     <Skill style={jsImage} title={"Foundation"}
-                           name={"HTML5, CSS3, Team player, English - intermediate (in progress)"}/>
+                           name={"HTML5, CSS3, Team player, English - pre-intermediate (in progress)"}/>
                     <Skill style={reactImage} title={"Testing"} name={"Unit Tests, Storybook"}/>
                     <Skill style={design} title={"Design"} name={"Material UI"}/>
                 </div>
